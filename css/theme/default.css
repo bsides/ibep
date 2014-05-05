@@ -125,7 +125,9 @@ body {
   -moz-transition: all .2s linear;
   -ms-transition: all .2s linear;
   -o-transition: all .2s linear;
-  transition: all .2s linear; }
+  transition: all .2s linear;
+  vertical-align: middel;
+}
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
@@ -156,6 +158,13 @@ body {
   margin: 0 3%;
   line-height: 29.14286px;
   padding: 10px 0;
+}
+.reveal figure small {
+  display: block;
+  position: absolute;
+  right: 0;
+  margin-right: 5%;
+  font-size: 0.5em;
 }
 .reveal pre, .reveal blockquote {
   background: #fff;
