@@ -171,6 +171,20 @@ body {
   padding: 12px 8px;
 }
 
+.slide-sonho body .reveal {
+  background: -moz-radial-gradient(center, circle cover, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%);
+  background: -webkit-radial-gradient(center, circle cover, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%);
+  background: -o-radial-gradient(center, circle cover, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%);
+  background: -ms-radial-gradient(center, circle cover, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%);
+  background: radial-gradient(center, circle cover, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%);
+}
+.slide-sonho section h2,
+.slide-sonho section p,
+.slide-sonho section small {
+  text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.2);
+}
+
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
