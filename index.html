@@ -3,40 +3,252 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Galeria de imagens</title>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <meta name="description" content="Galeria de imagens">
+  <meta name="author" content="IBEP">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/default.css" id="theme">
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="reveal" style="/*width:1024px;height:600px*/">
+
+    <h4 style="text-align:center;margin-top:20px;background:#fff;padding:12px 0;color:#999;font-weight:400">Título do OED</h4>
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+        <h1>OED Slider</h1>
+        <h3>Objetos do tipo galeria</h3>
+        <p>
+          <small>
+            Um exemplo rápido e prático sobre o sistema base para OEDs do tipo galeria
+          </small>
+        </p>
+      </section>
+
+      <section>
+        <figure>
+          <span>
+            <img src="galeria/amazonia.jpg" alt="Amazônia" />
+            <figcaption>Os fatos relevantes sobre como, por que, onde, etc<br />Ou mais texto conforme pedir a figura</figcaption>
+          </span>
+        </figure>
+      </section>
+
+      <!-- Example of nested vertical slides -->
+      <section>
+        <section>
+          <h2>4 direções a seguir</h2>
+          <p>
+            Podemos navegar nos slides em qualquer sentido,<br />
+            como por exemplo, para <a href="#" class="navigate-down">baixo</a>.
+          </p>
+          <a href="#" class="image navigate-down">
+            <img class="no-border" width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>Subtópico</h2>
+          <p>Pode ser usado para separar contextos</p>
+        </section>
+        <section>
+          <h2>Subtópico nível 2</h2>
+          <p>Prêmio: unicórnio!</p>
+          <a class="test" href="http://cornify.com">
+            <img class="no-border" width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
+          </a>
+        </section>
+        <section>
+          <h2>Subtópico nível 3</h2>
+          <p>Por hoje é só, hora de voltar ao topo</p>
+          <a href="#/2" class="image">
+            <img class="no-border" width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+          </a>
+        </section>
+      </section>
+
+      <section>
+        <h2>Referência</h2>
+        <p>
+          Pressione <strong>ESC</strong> para entrar no modo de visualização geral.
+        </p>
+        <p>
+          Segure alt e clique em qualquer elemento para dar zoom (faz uso do <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click de novo para sair.
+        </p>
+      </section>
+
+      <section>
+        <h2>Funciona em mobile</h2>
+        <p>
+          ...com touch e movimentos naturais
+        </p>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Markdown
+
+          Para aqueles que não querem se envolver no código HTML. Maiores informações [aqui](https://github.com/hakimel/reveal.js#markdown).
+
+          ```
+          <section data-markdown>
+            ## Markdown
+
+            Para aqueles que não querem se envolver no código HTML. Maiores informações [aqui](https://github.com/hakimel/reveal.js#markdown).
+          </section>
+          ```
         </script>
-    </body>
+      </section>
+
+      <section id="transitions">
+        <h2>Transições</h2>
+        <p>
+          Experimente as transições: <br>
+          <a href="?transition=cube#/transitions">Cubo</a> -
+          <a href="?transition=page#/transitions">Página</a> -
+          <a href="?transition=concave#/transitions">Côncave</a> -
+          <a href="?transition=zoom#/transitions">Zoom</a> -
+          <a href="?transition=linear#/transitions">Linear</a> -
+          <a href="?transition=fade#/transitions">Fade</a> -
+          <a href="?transition=none#/transitions">Nenhum</a> -
+          <a href="?#/transitions">Padrão</a>
+        </p>
+      </section>
+
+      <section id="themes">
+        <h2>Temas</h2>
+        <p>
+          Alguns temas extras: <br>
+          <a href="?#/themes">Padrão</a> -
+          <a href="?theme=sky#/themes">Céu</a> -
+          <a href="?theme=beige#/themes">Bege</a> -
+          <a href="?theme=simple#/themes">Simples</a> -
+          <a href="?theme=serif#/themes">Serifado</a> -
+          <a href="?theme=night#/themes">Noite</a> <br>
+          <a href="?theme=moon#/themes">Lua</a> -
+          <a href="?theme=solarized#/themes">Solarizado</a>
+        </p>
+      </section>
+
+      <section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+        <h2 style="color:#fff">Transição com fundo</h2>
+        <p style="color:#fff">
+          Um exemplo de slide com fundo sólido<br/>e outra transição, para efeitos diferentes
+        </p>
+      </section>
+
+      <section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
+        <h2 style="color:#fff">E outra</h2>
+        <p style="color:#fff">
+          Mudando várias vezes, para dar outro efeito de animação</code>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Citações</h2>
+        <p>
+          Um exemplo entre o texto: <br /><q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+          &ldquo;O rato roeu a roupa do rei de Roma&rdquo;</q> e outro em bloco:
+        </p>
+        <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+          &ldquo;Mais vale um pássaro na mão que dois voando.&rdquo;
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>Conexões</h2>
+        <p>
+          Links funcionam internamente,
+          <a href="#/2/3">como esse</a>.
+        </p>
+      </section>
+
+      <section>
+        <section id="fragments">
+          <h2>Etapas</h2>
+          <p>Passe para o próximo slide...</p>
+          <p class="fragment">... para navegar ...</p>
+          <ol>
+            <li class="fragment"><code>em qualquer tipo</code></li>
+            <li class="fragment"><em>de visualização</em></li>
+            <li class="fragment"><strong>por etapas</strong></li>
+          </ol>
+
+          <aside class="notes">
+            This slide has fragments which are also stepped through in the notes window.
+          </aside>
+        </section>
+        <section>
+          <h2>Fragment Styles</h2>
+          <p>There's a few styles of fragments, like:</p>
+          <p class="fragment grow">grow</p>
+          <p class="fragment shrink">shrink</p>
+          <p class="fragment roll-in">roll-in</p>
+          <p class="fragment fade-out">fade-out</p>
+          <p class="fragment highlight-red">highlight-red</p>
+          <p class="fragment highlight-green">highlight-green</p>
+          <p class="fragment highlight-blue">highlight-blue</p>
+          <p class="fragment current-visible">current-visible</p>
+          <p class="fragment highlight-current-blue">highlight-current-blue</p>
+        </section>
+      </section>
+
+      <section>
+        <h2>Espere um momento</h2>
+        <p>
+          Apertando a tecla <strong>b</strong> ou <strong>ponto</strong> no teclado, entra no modo de 'pausa'. Esse modo é útil para tirar distrações da tela enquanto o apresentador quer falar sobre algo importante.
+        </p>
+      </section>
+
+      <section>
+        <h1>FIM</h1>
+        <h3>Dúvidas?</h3>
+      </section>
+
+    </div>
+
+  </div>
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+<script src="js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
 </html>
